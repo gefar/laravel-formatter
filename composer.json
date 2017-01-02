@@ -1,37 +1,40 @@
 {
-	"name": "daniel-furmanov/laravel-formatter",
-	"type": "library",
-	"description": "A formatting library that converts data output between XML, CSV, JSON, TXT, YAML and a few others. And supports @attributes in XML",
-	"keywords": ["laravel", "formatter", "data", "convert", "csv", "xml", "yaml"],
-    "homepage": "https://github.com/DanielFurmanov/laravel-formatter",
+    "name": "gefar/laravel-formatter",
+    "description": "A formatting library that converts data output between XML, CSV, JSON, TXT, YAML and a few others. And supports @attributes in XML and delimiter for csv",
+    "type": "library",
+    "keywords": ["laravel", "formatter", "data", "convert", "csv", "xml", "yaml"],
+    "require": {
+        "php": ">=5.4.0",
+        "league/csv": "~6.0",
+        "mustangostang/spyc": "0.5.*@dev",
+        "illuminate/support": ">=4.0"
+    },
     "license": "MIT",
-	"authors": [
-		{
-			"name": "Daniel Furmanov",
-			"email": "fde711@gmail.com",
-			"homepage": "https://github.com/DanielFurmanov/"
-		},
-		{
-			"name": "Graham McCarthy",
-			"email": "graham@soapboxhq.com",
-			"homepage": "http://grahammccarthy.com"
-		},
-		{
-			"name": "Jaspaul Bola",
-			"email": "jaspaul.b@gamil.com",
-			"homepage": "http://jaspaulbola.com"
-		}
-	],
-	"require": {
-		"php": ">=5.4.0",
-		"league/csv": "~6.0",
-		"mustangostang/spyc": "0.5.*@dev",
-		"illuminate/support": ">=4.0"
-	},
-	"autoload": {
-		"psr-0": {
-			"DanielFurmanov\\Formatter": "src/"
-		}
-	},
-	"minimum-stability": "dev"
+    "authors": [
+        {
+            "name": "Farges Thomas",
+            "email": "thomas.farges@gmail.com"
+        },
+        {
+            "name": "Daniel Furmanov",
+            "email": "fde711@gmail.com",
+            "homepage": "https://github.com/DanielFurmanov/"
+        },
+        {
+            "name": "Graham McCarthy",
+            "email": "graham@soapboxhq.com",
+            "homepage": "http://grahammccarthy.com"
+        },
+        {
+            "name": "Jaspaul Bola",
+            "email": "jaspaul.b@gamil.com",
+            "homepage": "http://jaspaulbola.com"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "Gefar\\Formatter": "src/"
+        }
+    },
+    "minimum-stability": "dev"
 }
